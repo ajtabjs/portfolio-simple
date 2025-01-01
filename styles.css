@@ -1,0 +1,155 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Figtree", "Poppins", Arial, Helvetica, sans-serif;
+}
+#quotes{
+
+size: 3rem;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+   align-items:center;
+    height: 100vh; /* Full viewport height */
+}
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .gradient-bg {
+    background: linear-gradient(209deg,#04bb37,#007d64,#047841);
+    background-size: 1000% 1000%;
+    animation: gradient-animation 12s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.left-content {
+    text-align: center;
+    width: 30%;
+  /*  background-color: #f4f4f4; /* Light grey background */ 
+    padding: 25px;
+    box-sizing: border-box;
+   /* border-right: 5px solid #ffffff; */
+}
+p, h1,h2 {
+
+    color:white;
+}
+.right-content {
+    width: 70%;
+    padding: 25px;
+    box-sizing: border-box;
+  /*  background-color:#b37682; */
+}
+
+/* Optional styling for better appearance */
+h1, h2 {
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.6;
+}
+.divider {
+    width: 5px;
+    height:100vh;
+    background-color: #ffffff; /* Vertical divider color */
+}
+
+
+/* thanks github copilot :3 */
+@media only screen and (max-width: 500px) {
+  .container {
+      flex-direction: column; /* Stack the content vertically */
+  }
+  
+  .left-content, .right-content {
+      width: 100%; /* Take full width */
+      text-align: center;
+  }
+
+  .divider {
+    left: 0; /* Reset position */
+    width: 100vh;
+    height: 5px; /* Horizontal divider */
+}
+p,img,a{
+
+    font-size:1rem;
+}
+h1{
+
+  font-size:2rem;
+}
+}
+
+.round {
+    position:relative;
+    width: 21rem;
+    height: 21rem;
+    background-color: #048c4c;
+    border-radius: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black; 
+    margin: 0.2 auto; 
+}
+    
+    .round p {
+        margin-top:-0.5rem;
+        text-align:center;
+        position: relative;
+        z-index: 1; 
+        color: white; 
+    }
+    
+    .round h1 {
+        text-align:center;
+        position: relative;
+        z-index: 1;
+        color: white;
+    }
+    .round img{
+
+       text-align:center;
+       position: relative;
+       z-index: 1;
+     }
+
+     #profile{
+       width: 12rem;
+       height: 12rem;
+       border-radius: 50%;
+       margin-bottom:-2rem;
+      position:relative;
+        z-index: 1;
+     }
