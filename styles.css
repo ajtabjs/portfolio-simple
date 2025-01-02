@@ -155,8 +155,17 @@ h1{
      }
 
      .social {
-
+display:inline-block;
       width:2rem;
       height:2rem;
-      margin:0.1rem;
+      margin-right:0.5rem;
+      margin-top:0;
      }
+
+     /* New class for social media icons */
+.social-icons {
+  display: flex; /* Use flexbox to display icons horizontally */
+  justify-content: center; /* Centers the icons */
+  align-items: center; /* Ensures they are vertically aligned */
+  margin-top: 1rem; /* Optional: space between the profile image and icons */
+}
